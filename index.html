@@ -190,6 +190,107 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/18/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5%E6%91%84%E5%83%8F%E5%A4%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/pikachu.jpg">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="萝卜菜的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/18/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5%E6%91%84%E5%83%8F%E5%A4%B4/" class="post-title-link" itemprop="url">树莓派连接摄像头</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-18 16:20:33 / 修改时间：16:35:30" itemprop="dateCreated datePublished" datetime="2020-10-18T16:20:33+08:00">2020-10-18</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/10/18/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5%E6%91%84%E5%83%8F%E5%A4%B4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/10/18/树莓派连接摄像头/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>439</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>注：在写该博文时，使用 树莓派4B 8GB版本，Ubuntu MATE 20.04.1 Beta 2 - 13 August 2020。摄像头型号为官方的Pi Camera V2</p>
+</blockquote>
+<p>树莓派在使用官方的 Raspberry Pi OS 时，可以使用 <code>raspi-config</code> 直接使能摄像头，然后即可使用。但在 Ubuntu Mate 20 中，因为种种原因，并不包含 <code>raspi-config</code> 。同时，通过修改 apt 源之后，再启用 <code>raspi-config</code> 时，会提示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Your firmware appears to be out of date(no start_x.elf). Please update.</span><br></pre></td></tr></table></figure>
+
+<p>但是，的确是存在 <code>start_x.elf</code> 文件。</p>
+<p>可以通过以下方法去使能官方摄像头，也就是通过 CSI 方式启用的摄像头：</p>
+<ol>
+<li><code>cd /boot/firmware</code></li>
+<li><code>vim config.txt</code></li>
+<li>在最底下的位置添加一行 <code>start_x=1</code></li>
+<li>重启raspberry-pi</li>
+</ol>
+<p>重启之后，在命令行输入 <code>raspivid -p 0,0,640,480 -t 0</code> 应该就能够看到摄像头的实时画面了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/30/auto-ptr/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -515,14 +616,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -572,7 +673,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> 强力驱动
   </div>

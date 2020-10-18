@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>树莓派连接摄像头</title>
+    <url>/2020/10/18/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5%E6%91%84%E5%83%8F%E5%A4%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>注：在写该博文时，使用 树莓派4B 8GB版本，Ubuntu MATE 20.04.1 Beta 2 - 13 August 2020。摄像头型号为官方的Pi Camera V2</p>
+</blockquote>
+<p>树莓派在使用官方的 Raspberry Pi OS 时，可以使用 <code>raspi-config</code> 直接使能摄像头，然后即可使用。但在 Ubuntu Mate 20 中，因为种种原因，并不包含 <code>raspi-config</code> 。同时，通过修改 apt 源之后，再启用 <code>raspi-config</code> 时，会提示</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Your firmware appears to be out of date(no start_x.elf). Please update.</span><br></pre></td></tr></table></figure>
+
+<p>但是，的确是存在 <code>start_x.elf</code> 文件。</p>
+<p>可以通过以下方法去使能官方摄像头，也就是通过 CSI 方式启用的摄像头：</p>
+<ol>
+<li><code>cd /boot/firmware</code></li>
+<li><code>vim config.txt</code></li>
+<li>在最底下的位置添加一行 <code>start_x=1</code></li>
+<li>重启raspberry-pi</li>
+</ol>
+<p>重启之后，在命令行输入 <code>raspivid -p 0,0,640,480 -t 0</code> 应该就能够看到摄像头的实时画面了。</p>
+]]></content>
+      <tags>
+        <tag>raspberry_pi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C++中的智能指针</title>
     <url>/2020/08/30/auto-ptr/</url>
     <content><![CDATA[<h1 id="C-中的智能指针"><a href="#C-中的智能指针" class="headerlink" title="C++中的智能指针"></a>C++中的智能指针</h1><p>C++有四种智能指针，其中auto_ptr已经被C++ 11抛弃，在工程中主要使用<code>unique_ptr</code> <code>shared_ptr</code> 和<code>weak_ptr</code></p>
