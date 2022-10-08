@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_sample=self.webpackChunkblog_sample||[]).push([[9842],{4838:i=>{i.exports=JSON.parse('{"label":"optimization","permalink":"/docs/tags/optimization","allTagsPath":"/docs/tags","count":1,"items":[{"id":"ml/optimization/gemm_GPU","title":"GEMM_GPU","description":"GEMM GPU","permalink":"/docs/ml/optimization/gemm_GPU"}]}')}}]);
