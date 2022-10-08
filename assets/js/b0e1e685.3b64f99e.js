@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_sample=self.webpackChunkblog_sample||[]).push([[6685],{5219:e=>{e.exports=JSON.parse('{"label":"basic","permalink":"/docs/tags/basic","allTagsPath":"/docs/tags","count":1,"items":[{"id":"cpp/inline","title":"inline \u603b\u7ed3","description":"inline \u603b\u7ed3","permalink":"/docs/cpp/inline"}]}')}}]);
