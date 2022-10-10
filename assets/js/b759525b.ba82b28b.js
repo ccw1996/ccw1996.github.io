@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_sample=self.webpackChunkblog_sample||[]).push([[4095],{5984:e=>{e.exports=JSON.parse('{"label":"design","permalink":"/docs/tags/design","allTagsPath":"/docs/tags","count":1,"items":[{"id":"design_model/strategy","title":"\u7b56\u7565\u6a21\u5f0f","description":"\u7b56\u7565\u6a21\u5f0f","permalink":"/docs/design_model/strategy"}]}')}}]);
