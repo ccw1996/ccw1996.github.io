@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_sample=self.webpackChunkblog_sample||[]).push([[8926],{5035:e=>{e.exports=JSON.parse('{"label":"embedding","permalink":"/docs/tags/embedding","allTagsPath":"/docs/tags","count":1,"items":[{"id":"other/nfs","title":"nfs\u914d\u7f6e","description":"nfs\u914d\u7f6e","permalink":"/docs/other/nfs"}]}')}}]);
