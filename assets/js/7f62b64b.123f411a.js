@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_sample=self.webpackChunkblog_sample||[]).push([[2583],{1198:e=>{e.exports=JSON.parse('{"label":"STL","permalink":"/docs/tags/stl","allTagsPath":"/docs/tags","count":1,"items":[{"id":"cpp/STL/vector","title":"vector","description":"\u591a\u53c2\u6784\u9020\u51fd\u6570","permalink":"/docs/cpp/STL/vector"}],"unlisted":false}')}}]);
