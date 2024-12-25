@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_sample=self.webpackChunkblog_sample||[]).push([[4057],{1565:a=>{a.exports=JSON.parse('{"tag":{"label":"cuda","permalink":"/docs/tags/cuda","allTagsPath":"/docs/tags","count":1,"items":[{"id":"cuda/other","title":"GPU","description":"GPU","permalink":"/docs/cuda/other"}],"unlisted":false}}')}}]);

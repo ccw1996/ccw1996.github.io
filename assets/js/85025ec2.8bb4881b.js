@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_sample=self.webpackChunkblog_sample||[]).push([[189],{5021:e=>{e.exports=JSON.parse('{"tag":{"label":"proxy","permalink":"/docs/tags/proxy","allTagsPath":"/docs/tags","count":1,"items":[{"id":"other/proxy","title":"proxy\u914d\u7f6e","description":"proxy\u914d\u7f6e","permalink":"/docs/other/proxy"}],"unlisted":false}}')}}]);
